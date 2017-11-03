@@ -20,7 +20,7 @@ body {
 	box-sizing: border-box;
 	min-height: 100%;
 	position: relative;
-	padding: 0 0 70%;
+	/*padding: 0 0 70%;*/
 }
 
 .header {
@@ -70,7 +70,7 @@ body {
 .content {
 	clear: both;
 	width: 960px;
-	margin: 40px 15% 0px 15%;
+	margin: 40px 15% 100px 15%;
 }
 
 .mainContent {
@@ -79,6 +79,7 @@ body {
 	width: 650px;
 	padding: 10px;
 	border: solid #cccccc 1px;
+	margin-bottom: 50px;
 }
 
 .mainConter:after {
@@ -134,10 +135,10 @@ h3 {
 }
 
 .footer {
-	position: fixed;
-  	right: 0;
+	/*position: fixed;*/
+  	/*right: 0;
   	bottom: 0;
-  	left: 0;
+  	left: 0;*/
 	clear: both;
 	padding: 20px;
 	background-color: #666666;
@@ -146,6 +147,7 @@ h3 {
 	border-top-width: 5px;
 	border-top-color: #4aaaa5;
 	text-align: center;
+	margin-top: -100px;
 	/*height: 100px;*/
 }
 
@@ -285,35 +287,157 @@ h4 {
 
 /*Media Queries*/
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 980px) {
 	.header {
-		position: static;
 		width: auto;
 	}
-
 	.name {
-		position: relative;
-
+		margin-right: 210px;
 	}
-
+	.content {
+		width: 725px;
+	}
+	.mainContent {
+		width: 420px;
+	}
+	.mainContent img {
+		width: 370px;
+		height: 290px;
+	}
+	.mainContent p {
+		clear: both;
+	}
+	.aside {
+		width: 270px;
+	}
+	.Hangman, .RPG-Game, .Trivia, .Info-Widget, .RPS-Game {
+		width: 360px;
+		height: 265px;
+		background-image: url(../images/640px-Portfolio.jpg);
+		float: left;
+		background-repeat: repeat;
+		margin: 20px 0px 0px 25px;
+	}
+	h4 {
+		width: 360px;
+		padding: 20px 0px;
+		margin-top: 180px;
+	}
 }
 
 @media screen and (max-width: 768px) {
 	.header {
-		position: static;
 		width: auto;
 	}
-
-	.name{
- 
+	.name {
+		margin-left: 10px;
+		margin-right: 200px;
 	}
-
+	.content {
+		width: 725px;
+		margin: 40px 10px 0px 10px;
+	}
+	.mainContent {
+		width: 725px;
+		float: left;
+	}
+	.mainContent img {
+		width: 180px;
+		height: 200px;
+		float: left;
+		padding: 23px;
+	}
+	.mainContent p {
+		clear: none;
+	
+	}
+	.mainContent:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.aside {
+		width: 725px;
+		padding: 10px;
+		float: left;
+		margin-bottom: 40px;
+	}
+	.Hangman, .RPG-Game, .Trivia, .Info-Widget, .RPS-Game {
+		width: 315px;
+		height: 235px;
+		background-image: url(../images/640px-Portfolio.jpg);
+		float: left;
+		background-repeat: repeat;
+		margin: 20px 0px 0px 25px;
+	}
+	h4 {
+		width: 315px;
+		padding: 20px 0px;
+		margin-top: 150px;
+	}
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 640px) {
+	body {
+		width: 640px;
+	}
 	.header {
 		position: static;
-		width: auto;
+		width: 640px;
+		height: auto;
 	}
-
+	.name {
+		width: 640px;
+		text-align: center;
+		margin: 0px;
+	}
+	.name:after {
+		content: "";
+		display: table;
+		clear: both;	
+	}
+	.nav {
+		width: 640px;
+		float: left;
+	}
+	.nav a {
+		margin: 25px 80px 25px 0px;
+	}
+	.middleLink {
+		border-style: none;
+	}
+	.content {
+		width: 600px;
+	}
+	.mainContent {
+		width: 600px;
+	}
+	.mainContent img {
+		width: 540px;
+		height: 400px;
+	}
+	.mainContent p {
+		clear: both;
+	}
+	.aside {
+		width: 600px;
+	}
+	.Hangman, .RPG-Game, .Trivia, .Info-Widget, .RPS-Game {
+		width: 540px;
+		height: 400px;
+		background-image: url(../images/640px-Portfolio.jpg);
+		float: left;
+		background-repeat: repeat;
+		margin: 20px 0px 0px 25px;
+	}
+	.Hangman:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	h4 {
+		width: 540px;
+		margin-top: 300px;
+		padding: 20px 0px;
+	}
 }
